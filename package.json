@@ -1,0 +1,14 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "learn typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "zale",
+  "license": "ISC",
+  "dependencies": {
+    "cnpm": "^6.0.0"
+  }
+}
