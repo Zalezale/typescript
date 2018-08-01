@@ -27,6 +27,7 @@ let myIdentity4 : GenericIdentityFn1<number> = identity
 class GenericNumber<T>{
     zeroValue:T;
     add:(x:T,y:T)=>T
+    del:(x:string,y:string)=>string
 }
 let myG = new GenericNumber<number>()
 myG.zeroValue = 0
