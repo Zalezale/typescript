@@ -1,0 +1,17 @@
+模块模版
+1、module.d.ts  模块不可调用、不可构造
+2、module-class.d.ts  模块可构造
+3、module-function.d.ts  模块可调用
+4、module-plugin.d.ts  该模块插件改变另一个模块
+5、global-plugin.d.ts  该模块改变内置全局变量对象
+
+
+消费依赖性
+对全局库依赖 /// <reference types="someLib" />
+对模块依赖 import * as moment from "moment";
+
+防止命名冲突  
+推荐：declare namespace cats {
+    interface KittySettings { }
+}
+禁止：interface CatsKittySettings { }
